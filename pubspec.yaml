@@ -1,0 +1,37 @@
+name: xhipment_tracking_app
+description: "Xhipment Tracking App"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2 # HTTP requests
+  intl: ^0.18.0 # Date formatting
+  logger: ^1.1.0
+  flutter_animate: ^4.0.0 # Animations
+  cupertino_icons: ^1.0.8 # Icons for Cupertino styling
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.11.0 # Dependency for generating app icons
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png" # Path to your app icon image
+  adaptive_icon_background: "#FFFFFF" # Background color for Android adaptive icons
+
+flutter:
+  uses-material-design: true
+
+  # Add custom assets (e.g., fonts, images, etc.)
+  assets:
+    - assets/logo.png
