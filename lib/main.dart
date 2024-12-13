@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
-      theme: ThemeData(primarySwatch: Colors.orange),
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        fontFamily: 'Roboto',
+      ),
     );
   }
 }
@@ -56,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFFF4E00), 
       body: Center(
         child: FadeTransition(
           opacity: _fadeAnimation,
@@ -64,18 +67,10 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             mainAxisSize: MainAxisSize.min,
             children: [
               Image.asset(
-                'assets/logo.png',
-                width: 120,
+                'assets/splash_screen_logo.png', 
+                width: 200, 
               ),
               SizedBox(height: 16),
-              Text(
-                'Xhipment',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
             ],
           ),
         ),
